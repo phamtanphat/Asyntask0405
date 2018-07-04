@@ -4,15 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:textColor="#f20"
-        android:layout_centerInParent="true"
-        android:textSize="40sp"
-        android:text="Click"
-        android:layout_width="wrap_content"
+    <ProgressBar
+        android:visibility="invisible"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textviewKetqua"/>
+        android:id="@+id/progressbar"
+        android:progress="30" />
+    <Button
+        android:id="@+id/buttonDownload"
+        android:text="Down load"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/imageview"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp" />
+
+
 
 </RelativeLayout>
